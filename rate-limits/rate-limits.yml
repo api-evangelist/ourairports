@@ -1,0 +1,20 @@
+rateLimits:
+  - name: No Rate Limits
+    description: >
+      OurAirports does not impose API rate limits or access quotas. The data is
+      served as static CSV files via GitHub Pages, which applies standard GitHub
+      infrastructure limits. For bulk or automated access, GitHub recommends
+      cloning the repository (github.com/davidmegginson/ourairports-data) rather
+      than repeatedly fetching individual files over HTTP. Data files are updated
+      daily; there is no benefit to polling more frequently than once per day.
+    limits:
+      - type: HTTP Downloads
+        limit: No explicit limit stated
+        note: Served as static files via GitHub Pages; GitHub infrastructure limits apply
+      - type: Recommended Access Pattern
+        limit: Once per day maximum
+        note: Data is refreshed daily; more frequent polling is unnecessary
+      - type: Git Clone
+        limit: Standard GitHub rate limits for git operations
+        note: Preferred method for automated or bulk data consumers
+    url: https://ourairports.com/data/

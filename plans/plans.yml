@@ -1,0 +1,20 @@
+plans:
+  - name: Public Domain Open Data
+    description: >
+      All OurAirports data is released to the public domain under the Unlicense
+      license. There are no subscription tiers, registration requirements, or
+      API keys needed to access the data. Anyone may download, use, modify, and
+      redistribute the CSV datasets without restriction. Credit is appreciated
+      but not legally required.
+    url: https://ourairports.com/data/
+    price: Free
+    license: Unlicense (Public Domain)
+    features:
+      - Daily-updated CSV datasets hosted on GitHub Pages
+      - Full airports database (85,000+ airports worldwide)
+      - Runways, navaids, frequencies, countries, and regions datasets
+      - No registration or API key required
+      - No rate limits on downloads
+      - GitHub repository cloning supported
+      - UTF-8 encoded CSV format compatible with most tools
+      - Public domain — no attribution legally required

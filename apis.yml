@@ -1,0 +1,199 @@
+name: OurAirports
+description: >
+  OurAirports is an open airport data platform maintained by a global community
+  of aviation enthusiasts. It provides a comprehensive, community-maintained
+  database of 85,000+ airports, runways, radio navigation aids (navaids), and
+  communication frequencies worldwide. All data is released to the public domain
+  and is available as daily-updated CSV datasets hosted on GitHub Pages. The
+  platform covers airports of every type — from large commercial hubs to small
+  private airstrips, heliports, seaplane bases, and balloon ports — across every
+  country and territory on Earth.
+image: https://ourairports.com/favicon.ico
+tags:
+  - Aviation
+  - Airports
+  - Open Data
+  - CSV
+  - Geospatial
+  - Transportation
+  - Runways
+  - Navaids
+  - Public Domain
+url: https://ourairports.com
+created: '2026-06-13'
+modified: '2026-06-13'
+specificationVersion: '0.19'
+apis:
+  - name: OurAirports Airports Dataset
+    description: >
+      Daily-updated CSV dataset containing information on 85,000+ airports
+      worldwide, including ICAO/IATA codes, coordinates, elevation, type,
+      scheduled service status, and links to official and Wikipedia pages.
+    image: https://ourairports.com/favicon.ico
+    humanURL: https://ourairports.com/data/
+    baseURL: https://davidmegginson.github.io/ourairports-data
+    tags:
+      - Airports
+      - CSV
+      - Open Data
+      - ICAO
+      - IATA
+      - Geospatial
+    properties:
+      - type: Documentation
+        url: https://ourairports.com/help/data-dictionary.html
+      - type: Download
+        url: https://davidmegginson.github.io/ourairports-data/airports.csv
+      - type: GitHubRepository
+        url: https://github.com/davidmegginson/ourairports-data
+    contact:
+      - FN: OurAirports Community
+        url: https://ourairports.com
+
+  - name: OurAirports Runways Dataset
+    description: >
+      Daily-updated CSV dataset describing runway surfaces, dimensions, lighting,
+      and endpoint coordinates for airports in the OurAirports database. Includes
+      both low-end and high-end runway designators with precise heading and
+      position data.
+    image: https://ourairports.com/favicon.ico
+    humanURL: https://ourairports.com/data/
+    baseURL: https://davidmegginson.github.io/ourairports-data
+    tags:
+      - Runways
+      - Airports
+      - CSV
+      - Open Data
+      - Geospatial
+    properties:
+      - type: Documentation
+        url: https://ourairports.com/help/data-dictionary.html
+      - type: Download
+        url: https://davidmegginson.github.io/ourairports-data/runways.csv
+      - type: GitHubRepository
+        url: https://github.com/davidmegginson/ourairports-data
+    contact:
+      - FN: OurAirports Community
+        url: https://ourairports.com
+
+  - name: OurAirports Navaids Dataset
+    description: >
+      Daily-updated CSV dataset of radio navigation aids (VOR, NDB, DME, TACAN,
+      VORTAC, and combinations) associated with airports worldwide. Includes
+      frequency, position, power level, usage type, and DME pairing details.
+    image: https://ourairports.com/favicon.ico
+    humanURL: https://ourairports.com/data/
+    baseURL: https://davidmegginson.github.io/ourairports-data
+    tags:
+      - Navaids
+      - VOR
+      - NDB
+      - DME
+      - Aviation
+      - CSV
+      - Open Data
+    properties:
+      - type: Documentation
+        url: https://ourairports.com/help/data-dictionary.html
+      - type: Download
+        url: https://davidmegginson.github.io/ourairports-data/navaids.csv
+      - type: GitHubRepository
+        url: https://github.com/davidmegginson/ourairports-data
+    contact:
+      - FN: OurAirports Community
+        url: https://ourairports.com
+
+  - name: OurAirports Airport Frequencies Dataset
+    description: >
+      Daily-updated CSV dataset of radio communication frequencies for airports,
+      including tower (TWR), ground (GND), ATIS, UNICOM, and remote communications
+      outlet (RCO) frequencies in megahertz.
+    image: https://ourairports.com/favicon.ico
+    humanURL: https://ourairports.com/data/
+    baseURL: https://davidmegginson.github.io/ourairports-data
+    tags:
+      - Frequencies
+      - Radio
+      - Airports
+      - Aviation
+      - CSV
+      - Open Data
+    properties:
+      - type: Documentation
+        url: https://ourairports.com/help/data-dictionary.html
+      - type: Download
+        url: https://davidmegginson.github.io/ourairports-data/airport-frequencies.csv
+      - type: GitHubRepository
+        url: https://github.com/davidmegginson/ourairports-data
+    contact:
+      - FN: OurAirports Community
+        url: https://ourairports.com
+
+  - name: OurAirports Countries Dataset
+    description: >
+      Reference CSV dataset of sovereign states and country-like entities used
+      to cross-reference the iso_country field in other OurAirports datasets.
+      Includes ISO 3166-1 alpha-2 codes, continent assignments, and Wikipedia links.
+    image: https://ourairports.com/favicon.ico
+    humanURL: https://ourairports.com/data/
+    baseURL: https://davidmegginson.github.io/ourairports-data
+    tags:
+      - Countries
+      - Reference Data
+      - ISO 3166
+      - CSV
+      - Open Data
+    properties:
+      - type: Documentation
+        url: https://ourairports.com/help/data-dictionary.html
+      - type: Download
+        url: https://davidmegginson.github.io/ourairports-data/countries.csv
+      - type: GitHubRepository
+        url: https://github.com/davidmegginson/ourairports-data
+    contact:
+      - FN: OurAirports Community
+        url: https://ourairports.com
+
+  - name: OurAirports Regions Dataset
+    description: >
+      Reference CSV dataset of high-level administrative subdivisions (states,
+      provinces, territories) used to cross-reference the iso_region field in the
+      airports dataset. Includes ISO 3166-2 codes and local-language keyword synonyms.
+    image: https://ourairports.com/favicon.ico
+    humanURL: https://ourairports.com/data/
+    baseURL: https://davidmegginson.github.io/ourairports-data
+    tags:
+      - Regions
+      - Administrative Divisions
+      - ISO 3166-2
+      - Reference Data
+      - CSV
+      - Open Data
+    properties:
+      - type: Documentation
+        url: https://ourairports.com/help/data-dictionary.html
+      - type: Download
+        url: https://davidmegginson.github.io/ourairports-data/regions.csv
+      - type: GitHubRepository
+        url: https://github.com/davidmegginson/ourairports-data
+    contact:
+      - FN: OurAirports Community
+        url: https://ourairports.com
+
+common:
+  - type: TermsOfService
+    url: https://ourairports.com/about.html
+  - type: License
+    url: https://unlicense.org/
+  - type: GitHubRepository
+    url: https://github.com/davidmegginson/ourairports-data
+  - type: GitHubPagesData
+    url: https://davidmegginson.github.io/ourairports-data/
+  - type: DataDictionary
+    url: https://ourairports.com/help/data-dictionary.html
+  - type: Community
+    url: https://ourairports.com
+
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

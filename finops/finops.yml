@@ -1,0 +1,19 @@
+finops:
+  - name: OurAirports Cost Structure
+    description: >
+      OurAirports operates as a community-maintained open data project with no
+      commercial pricing model. All datasets are free to download and use with
+      no cost. The project relies on community contributions for data quality
+      and accuracy. There are no paid tiers, enterprise plans, or premium data
+      products. Infrastructure costs are absorbed by the maintainer and GitHub
+      Pages hosting.
+    cost: $0.00
+    currency: USD
+    billing: None
+    notes:
+      - No API keys, accounts, or payment required for data access
+      - Data is hosted on GitHub Pages at zero cost to consumers
+      - Community-maintained; contributors improve data via free OurAirports accounts
+      - No SLA, support contracts, or commercial agreements available
+      - Public domain license means zero legal compliance cost for users
+    url: https://ourairports.com/data/
