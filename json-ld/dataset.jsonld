@@ -1,0 +1,168 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "DataCatalog",
+  "@id": "https://ourairports.com/data/",
+  "name": "OurAirports Open Aviation Data",
+  "description": "A comprehensive, community-maintained open-data catalog of 85,000+ airports, runways, radio navigation aids, and communication frequencies worldwide. All datasets are released to the public domain and updated daily.",
+  "url": "https://ourairports.com/data/",
+  "license": "https://unlicense.org/",
+  "isAccessibleForFree": true,
+  "creator": {
+    "@type": "Organization",
+    "name": "OurAirports Community",
+    "url": "https://ourairports.com"
+  },
+  "maintainer": {
+    "@type": "Person",
+    "name": "David Megginson",
+    "url": "https://www.megginson.com/"
+  },
+  "temporalCoverage": "2007/..",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "World"
+  },
+  "keywords": [
+    "aviation",
+    "airports",
+    "runways",
+    "navaids",
+    "navigation aids",
+    "radio frequencies",
+    "ICAO",
+    "IATA",
+    "open data",
+    "public domain",
+    "geospatial",
+    "transportation"
+  ],
+  "dataset": [
+    {
+      "@type": "Dataset",
+      "name": "OurAirports Airports Dataset",
+      "description": "Daily-updated CSV dataset containing information on 85,000+ airports worldwide, including ICAO/IATA codes, coordinates, elevation, type, scheduled service status, and links to official and Wikipedia pages.",
+      "url": "https://davidmegginson.github.io/ourairports-data/airports.csv",
+      "encodingFormat": "text/csv",
+      "license": "https://unlicense.org/",
+      "isAccessibleForFree": true,
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/csv",
+          "contentUrl": "https://davidmegginson.github.io/ourairports-data/airports.csv"
+        }
+      ],
+      "variableMeasured": [
+        "ident", "type", "name", "latitude_deg", "longitude_deg",
+        "elevation_ft", "continent", "iso_country", "iso_region",
+        "municipality", "scheduled_service", "gps_code", "iata_code",
+        "local_code", "home_link", "wikipedia_link", "keywords"
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "name": "OurAirports Runways Dataset",
+      "description": "Daily-updated CSV dataset describing runway surfaces, dimensions, lighting, and endpoint coordinates for airports in the OurAirports database.",
+      "url": "https://davidmegginson.github.io/ourairports-data/runways.csv",
+      "encodingFormat": "text/csv",
+      "license": "https://unlicense.org/",
+      "isAccessibleForFree": true,
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/csv",
+          "contentUrl": "https://davidmegginson.github.io/ourairports-data/runways.csv"
+        }
+      ],
+      "variableMeasured": [
+        "airport_ref", "airport_ident", "length_ft", "width_ft",
+        "surface", "lighted", "closed",
+        "le_ident", "le_latitude_deg", "le_longitude_deg", "le_elevation_ft",
+        "le_heading_degT", "le_displaced_threshold_ft",
+        "he_ident", "he_latitude_deg", "he_longitude_deg", "he_elevation_ft",
+        "he_heading_degT", "he_displaced_threshold_ft"
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "name": "OurAirports Navaids Dataset",
+      "description": "Daily-updated CSV dataset of radio navigation aids (VOR, NDB, DME, TACAN, VORTAC, and combinations) associated with airports worldwide.",
+      "url": "https://davidmegginson.github.io/ourairports-data/navaids.csv",
+      "encodingFormat": "text/csv",
+      "license": "https://unlicense.org/",
+      "isAccessibleForFree": true,
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/csv",
+          "contentUrl": "https://davidmegginson.github.io/ourairports-data/navaids.csv"
+        }
+      ],
+      "variableMeasured": [
+        "ident", "name", "type", "frequency_khz", "latitude_deg",
+        "longitude_deg", "elevation_ft", "iso_country", "dme_frequency_khz",
+        "dme_channel", "dme_latitude_deg", "dme_longitude_deg",
+        "dme_elevation_ft", "slaved_variation_deg", "magnetic_variation_deg",
+        "usageType", "power", "associated_airport"
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "name": "OurAirports Airport Frequencies Dataset",
+      "description": "Daily-updated CSV dataset of radio communication frequencies for airports, including tower, ground, ATIS, UNICOM, and remote communications outlet frequencies in megahertz.",
+      "url": "https://davidmegginson.github.io/ourairports-data/airport-frequencies.csv",
+      "encodingFormat": "text/csv",
+      "license": "https://unlicense.org/",
+      "isAccessibleForFree": true,
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/csv",
+          "contentUrl": "https://davidmegginson.github.io/ourairports-data/airport-frequencies.csv"
+        }
+      ],
+      "variableMeasured": [
+        "airport_ref", "airport_ident", "type", "description", "frequency_mhz"
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "name": "OurAirports Countries Dataset",
+      "description": "Reference CSV dataset of sovereign states and country-like entities used to cross-reference the iso_country field in other OurAirports datasets. Includes ISO 3166-1 alpha-2 codes, continent assignments, and Wikipedia links.",
+      "url": "https://davidmegginson.github.io/ourairports-data/countries.csv",
+      "encodingFormat": "text/csv",
+      "license": "https://unlicense.org/",
+      "isAccessibleForFree": true,
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/csv",
+          "contentUrl": "https://davidmegginson.github.io/ourairports-data/countries.csv"
+        }
+      ],
+      "variableMeasured": [
+        "code", "name", "continent", "wikipedia_link", "keywords"
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "name": "OurAirports Regions Dataset",
+      "description": "Reference CSV dataset of high-level administrative subdivisions (states, provinces, territories) used to cross-reference the iso_region field in the airports dataset. Includes ISO 3166-2 codes and local-language keyword synonyms.",
+      "url": "https://davidmegginson.github.io/ourairports-data/regions.csv",
+      "encodingFormat": "text/csv",
+      "license": "https://unlicense.org/",
+      "isAccessibleForFree": true,
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/csv",
+          "contentUrl": "https://davidmegginson.github.io/ourairports-data/regions.csv"
+        }
+      ],
+      "variableMeasured": [
+        "code", "local_code", "name", "continent", "iso_country",
+        "wikipedia_link", "keywords"
+      ]
+    }
+  ]
+}

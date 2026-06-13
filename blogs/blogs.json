@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "description": "Blog and news feed index for OurAirports. OurAirports does not maintain a dedicated provider blog. The project founder David Megginson publishes aviation-related content on his personal blog 'Land and Hold Short'. No machine-readable feed was discoverable at time of last fetch.",
+    "last_fetched": "2026-06-13",
+    "source_checked": [
+      "https://ourairports.com/blog/",
+      "https://ourairports.com/news/",
+      "https://ourairports.com/about.html",
+      "https://www.megginson.com/blogs/lahso/"
+    ]
+  },
+  "blogs": []
+}
