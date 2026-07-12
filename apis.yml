@@ -181,6 +181,8 @@ apis:
         url: https://ourairports.com
 
 common:
+  - type: DomainSecurity
+    url: security/ourairports-domain-security.yml
   - type: TermsOfService
     url: https://ourairports.com/about.html
   - type: License
