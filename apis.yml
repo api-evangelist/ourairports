@@ -8,6 +8,18 @@ description: >
   platform covers airports of every type — from large commercial hubs to small
   private airstrips, heliports, seaplane bases, and balloon ports — across every
   country and territory on Earth.
+accessModel:
+  pricing: free
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Free
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
 image: https://ourairports.com/favicon.ico
 tags:
   - Aviation
