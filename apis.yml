@@ -8,6 +8,18 @@ description: >
   platform covers airports of every type — from large commercial hubs to small
   private airstrips, heliports, seaplane bases, and balloon ports — across every
   country and territory on Earth.
+deliveryModel:
+  model: unknown
+  open_source: unknown
+  commercial: true
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - pricing
+  - repository-unlicensed
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: free
   onboarding: unknown
@@ -193,6 +205,8 @@ apis:
         url: https://ourairports.com
 
 common:
+  - type: IssueTracker
+    url: https://github.com/davidmegginson/ourairports-data/issues
   - type: DomainSecurity
     url: security/ourairports-domain-security.yml
   - type: TermsOfService
